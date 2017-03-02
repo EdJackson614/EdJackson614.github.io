@@ -31,7 +31,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Ed's Portfolio</a>
+      <a class="navbar-brand" href="#">Portfolio</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -50,12 +50,12 @@
 <div class="jumbotron">
   <div class="container text-center">
     <h1>My Portfolio</h1>      
-    <p>My "birth" and "maturation" as a developer...</p>
+    <p>Some text that represents "Me"...</p>
   </div>
 </div>
   
 <div class="container-fluid bg-3 text-center">    
-  <h3>Some of my Work that represent my growth...</h3><br>
+  <h3>Some of my Work</h3><br>
   <div class="row">
     <div class="col-sm-4">
       <p>Some text..</p>
@@ -69,29 +69,32 @@
       <p>Some text..</p>
       <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
     </div>
-    </div>
+   </div>
 </div><br>
 
 <div class="container-fluid bg-3 text-center">    
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <p>Some text..</p>
       <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
     </div>
-    <div class="col-sm-4"> 
+    <div class="col-sm-3"> 
       <p>Some text..</p>
       <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
     </div>
-    <div class="col-sm-4"> 
+    <div class="col-sm-3"> 
       <p>Some text..</p>
       <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
     </div>
-    >
+    <div class="col-sm-3">
+      <p>Some text..</p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
   </div>
 </div><br><br>
 
 <footer class="container-fluid text-center">
-  <p>Ed Jackson</p>
+  <p>Footer Text</p>
 </footer>
 
 </body>
