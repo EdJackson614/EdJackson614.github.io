@@ -1,98 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Ed Jackson's Portfolio</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-  </style>
-</head>
-<body>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Portfoliio Page">
+	<meta name="author"      content="Ed Jackson">
+	
+	<title>Ed Jackson's Portfolio</title>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Ed's Portfolio</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+	<!-- Bootstrap itself -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/magister.css">
+
+	<!-- Fonts -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
+<body class="theme-invert">
+
+<nav class="mainmenu">
+	<div class="container">
+		<div class="dropdown">
+			<button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				<li><a href="#head" class="active">Hello</a></li>
+				<li><a href="#about">About me</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Get in touch</a></li>
+			</ul>
+		</div>
+	</div>
 </nav>
 
-<div class="jumbotron">
-  <div class="container text-center">
-    <h1>My Portfolio</h1>      
-    <p>My "birth" and "maturation" as a developer...</p>
-  </div>
-</div>
-  
-<div class="container-fluid bg-3 text-center">    
-  <h3>Some of my Work that represent my growth...</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    </div>
-</div><br>
 
-<div class="container-fluid bg-3 text-center">    
-  <div class="row">
-    <div class="col-sm-4">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    >
-  </div>
-</div><br><br>
+<!-- Main (Home) section -->
+<section class="section" id="head">
+	<div class="container">
 
-<footer class="container-fluid text-center">
-  <p>Ed Jackson</p>
-</footer>
+		<div class="row">
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">	
 
+				<!-- Site Title, your name, HELLO msg, etc. -->
+				<h1 class="title">Ed Jackson's Portfolio</h1>
+				<h6 class="subtitle">"If it doesn't challenge you, it won't change you. We only expand by demand."~ Zig Ziglar</h6>
+
+				<!-- Short introductory (optional) -->
+				<h3 class="tagline">
+					 Hello,<br>
+          My name is Ed Jackson and I am a budding junior Web Developer who is currently enrolled in the WeCan Code It bootcamp. 
+
+          I am short on experience and formal training but I am driven and blessd with an aptitude and love to learn.
+
+          I have a a working knowledge of the following HTML,CSS,JS,jQuery,Bootstrap, MySQL...
+        </h3>
+
+				</h3>
+				
+				<!-- Nice place to describe your site in a sentence or two -->
+				<p><a href="/download/" class="btn btn-default btn-lg">Things I've worked on...</a></p>
+	
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+	
+	</div>
+</section>
+
+<!-- Second (About) section -->
+<section class="section" id="about">
+	<div class="container">
+	
+		<h2 class="text-center title">About me</h2>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">    
+				<h5><strong>What will go here?<br></strong></h5>
+				<p>Well, here it is: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, ullam, ducimus, eaque, ex autem est dolore illo similique quasi unde sint rerum magnam quod amet iste dolorem ad laudantium molestias enim quibusdam inventore totam fugit eum iusto ratione alias deleniti suscipit modi quis nostrum veniam fugiat debitis officiis impedit ipsum natus ipsa. Doloremque, id, at, corporis, libero laborum architecto mollitia molestiae maxime aut deserunt sed perspiciatis quibusdam praesentium consectetur in sint impedit voluptates! Deleniti, sequi voluptate recusandae facere nostrum?</p>    
+			</div>
+			<div class="col-sm-4">
+				<h5><strong>More, more lipsum!<br></strong></h5>    
+				<p>Tempore, eos, voluptatem minus commodi error aut eaque neque consequuntur optio nesciunt quod quibusdam. Ipsum, voluptatibus, totam, modi perspiciatis repudiandae odio ad possimus molestias culpa optio eaque itaque dicta quod cupiditate reiciendis illo illum aspernatur ducimus praesentium quae porro alias repellat quasi cum fugiat accusamus molestiae exercitationem amet fugit sint eligendi omnis adipisci corrupti. Aspernatur.</p>    
+				<h5><strong>Author links<br></strong></h5>    
+				<p><a href="http://be.net/pozhilov9409">Behance</a> / <a href="https://twitter.com/serggg">Twitter</a> / <a href="http://linkedin.com/pozhilov">LinkedIn</a> / <a href="https://www.facebook.com/pozhilov">Facebook</a></p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Third (Works) section -->
+<section class="section" id="projects">
+	<div class="container">
+	
+		<h2 class="text-center title">Things I have worked on</h2>
+		<p class="lead text-center">
+			Much appreciation to my teachers and cohorts at WCCI, their guidance has been amazing. Thank ou guys!
+		</p>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/screenshots/sshot1.jpg" alt="">
+					<div class="caption">
+						<h3>Thumbnail label</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="assets/screenshots/sshot4.jpg" alt="">
+					<div class="caption">
+						<h3>Thumbnail label</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/screenshots/sshot5.jpg" alt="">
+					<div class="caption">
+						<h3>Thumbnail label</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="assets/screenshots/sshot3.jpg" alt="">
+					<div class="caption">
+						<h3>Thumbnail label</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+<!-- Fourth (Contact) section -->
+<section class="section" id="contact">
+	<div class="container">
+	
+		<h2 class="text-center title">Get in touch</h2>
+
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 text-center">
+				<p class="lead">Feel free to email me, or drop me a line in Twitter!</p>
+				<p><b>edjackson614@yahoo.com</b><br><br></p>
+				<ul class="list-inline list-social">
+					<li><a href="https://twitter.com/serggg" class="btn btn-link"><i class="fa fa-twitter fa-fw"></i> Twitter</a></li>
+					<li><a href="https://github.com/EdJackson614/EdJackson614.github.io.git" class="btn btn-link"><i class="fa fa-github fa-fw"></i> Github</a></li>
+					<li><a href="http://www.linkedin.com/in/ed-jackson-41b5a910/" class="btn btn-link"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+<!-- Load js libs only when the page is loaded. -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="assets/js/modernizr.custom.72241.js"></script>
+<!-- Custom template scripts -->
+<script src="assets/js/magister.js"></script>
 </body>
 </html>
