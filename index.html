@@ -36,7 +36,7 @@
 					<li><a href="#head" class="active">Hello</a></li>
 					<li><a href="#about">About me</a></li>
 					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Get in touch</a></li>
+					<li><a href="#contact">Contact Me</a></li>
 				</ul>
 			</div>
 		</div>
@@ -78,20 +78,15 @@
 	<div class="container">
 
 		<h2 class="text-center title">About me</h2>
-		<div class="row">
-			<div class="col-sm-4 col-sm-offset-2">    
-				<h5><strong>I am currently enrolled in the We Can Code It
+		<p class="lead text-center">I am currently enrolled in the We Can {Code} It
 						(WCCI) bootcamp; mildly stated, this has been a transforming experience.
 
 						My previous employment I have gained a strong grasp of security principles and how they apply to E-Commerce applications.
 
-						Although, short on experience and formal training (as a developer) - a sprout- I am driven, task oriented and blessed with an aptitude and love to learn new concepts.<br></strong></h5>
+						Although, short on experience and formal training (as a developer) - a sprout- I am driven, task oriented and blessed with an aptitude and love to learn new concepts.<br></strong></p>
 				 
 			</div>
-			<div class="col-sm-4">
-				<h5><strong>Author links<br></strong></h5>    
-				<p> <a href="https://www.linkedin.com/in/ed-jackson-41b5a910/">LinkedIn</a> / <a href="https://https://www.facebook.com/EdJackson614">Facebook</a></p>
-			</div>
+			
 		</div>
 	</div>
 </section>
@@ -172,15 +167,14 @@
 <section class="section" id="contact">
 	<div class="container">
 
-		<h2 class="text-center title">Get in touch</h2>
+		<h2 class="text-center title">Contact Me</h2>
 
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2 text-center">
-				<p class="lead">Feel free to email me, or drop me a line in Twitter!</p>
+				<p class="lead">Feel free to email me, or contact me via social media!</p>
 				<p><b>edjackson614@yahoo.com</b><br><br></p>
 				<ul class="list-inline list-social">
-					<li><a href="https://twitter.com/serggg" class="btn btn-link"><i class="fa fa-twitter fa-fw"></i> Twitter</a></li>
-					<li><a href="https://github.com/EdJackson614/EdJackson614.github.io.git" class="btn btn-link"><i class="fa fa-github fa-fw"></i> Github</a></li>
+				<li><a href="https://github.com/EdJackson614/EdJackson614.github.io.git" class="btn btn-link"><i class="fa fa-github fa-fw"></i> Github</a></li>
 					<li><a href="https://www.linkedin.com/in/ed-jackson-41b5a910/" class="btn btn-link"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a></li>
 				</ul>
 			</div>
@@ -189,7 +183,7 @@
 
 	</section>
 	
-	<!-- Load js libs only when the page is loaded. -->
+	<!-- Load js libraries only when the page is loaded. -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 	<script src="assets/js/modernizr.custom.72241.js"></script>
@@ -199,12 +193,12 @@
 	$(document).ready(function(){
 			var $api = $('#api')
 
-		
+				//jQuery $.get Method
 			$.get("https://api.github.com/users/edjackson614", function(data, status){
 				console.log (data);
 				var reposUrl = data.repos_url;
 				console.log(reposUrl)
-
+					//jQuery $.get Method
 					$.get(reposUrl, function(data, status){
 						
 						for (var index=0; index< data.length;index++){
@@ -212,7 +206,10 @@
 						var name = arrayData.name;
 						var htmlURL = arrayData.html_url;
 						var updated = arrayData.updated_at;
+						//jQuery append
 						$api.append('<li>'+name+'</li>');
+						$api.append('<li>'+htmlURL+'</li>');
+						$api.append('<li>'+updated+'</li>');
 						// 
 
 						}
